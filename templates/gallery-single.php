@@ -90,6 +90,6 @@ $height = $img_size->height;?>
 
 <pw-region id="bottom-region" pw-append>
 
-<?php wireIncludeFile("inc/photoswipe/_photoswipe-script"); // ( Include header )?>
+<?php wireIncludeFile("inc/photoswipe/_photoswipe-script");?>
 
 </pw-region>

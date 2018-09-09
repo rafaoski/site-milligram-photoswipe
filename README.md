@@ -6,7 +6,7 @@
 #### Essentially, this structure uses minimalist CSS framework [Milligram](https://milligram.io/) and the Flexbox Grid System [Gridlex](https://gridlex.devlint.fr/)
 
 ### How To Install
-1. Download the [zip file](https://github.com/rafaoski/site-milligram-blog/archive/master.zip) at Github or clone directly the repo: ```git clone git@github.com:rafaoski/site-milligram-blog.git```
+1. Download the [zip file](https://github.com/rafaoski/site-milligram-photoswipe/archive/master.zip) at Github or clone directly the repo: ```git clone git@github.com:rafaoski/site-milligram-photoswipe.git```
 2. Extract the folder **site-milligram** into a fresh ProcessWire installation root folder.
 3. During the installation of ProcessWire, choose the profile **"Milligram Blog"**.
 
@@ -45,6 +45,7 @@ On completion, use the command <code><b>npm run production</b></code> to build s
 #### References: 
 [Milligram](https://milligram.io/)  
 [Gridlex](https://gridlex.devlint.fr/)  
+[Photoswipe](http://photoswipe.com/)  
 [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)  
 [Feather Icons](https://feathericons.com/)  
 [Web Font Loader](https://github.com/typekit/webfontloader)  

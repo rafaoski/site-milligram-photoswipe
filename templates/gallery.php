@@ -1,7 +1,9 @@
 <?php namespace ProcessWire;
 // Get Page children
-$items = page()->children('limit=12');?>
-
+$items = page()->children('limit=12');
+// No Found
+if(!count($items)) : echo "<h1 id='content-head'>" . page()->ts['noFound'] . "</h1>";
+else:?>
 <!-- HEADING -->
 <h1 id='content-head'><?=icon('activity',
 [  'txt' => page()->get('headline|title'),
@@ -9,8 +11,8 @@ $items = page()->children('limit=12');?>
    'height' => 50,
    'stroke' => 1,
    'color' => '#6a7780'
-]
-)?></h1>
+])?></h1>
+<?php endif; ?>
 
 <div id='content-body' class="news grid" pw-append>
 

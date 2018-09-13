@@ -2,7 +2,7 @@
 
 $children = $item->children("limit=4,sort=random");?>
 
-<section id='<?=$id?>' class="<?=$class?>">
+<section id='galeries' class="container-fluid">
 
      <?php // Simple Icon
             echo icon('image', // https://feathericons.com/

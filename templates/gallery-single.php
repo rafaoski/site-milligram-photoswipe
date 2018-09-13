@@ -56,6 +56,20 @@ $height = $img_size->height;?>
 
 </div><!-- /#content-body -->
 
+<aside id="sidebar" pw-append>
+
+<?php // Show Home page Children
+    echo pageChildren(page()->parent,
+    [
+        'limit'=> 12,
+        'random' => true,
+        'txt' => page()->ts['moreGallery']
+    ]
+);
+?>
+
+</aside>
+
 <style id='head-style' pw-append>
 
 .my-gallery {

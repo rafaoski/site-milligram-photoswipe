@@ -14,11 +14,11 @@ else:?>
 ])?></h1>
 <?php endif; ?>
 
-<div id='content-body' class="news grid" pw-append>
+<div id='content-body' class="gallery grid" pw-append>
 
 <?php foreach ($items as $item): ?>
 
-<article class='blog-item col-6_sm-12'>
+<div class='col-6_sm-12'>
 
 <?=icon('image',
 [
@@ -40,10 +40,23 @@ else:?>
 
 <p><?=$item->render('body','txt-small')?></p>
 
-</article>
+</div>
 
 <?php endforeach;
 // https://processwire.com/api/modules/markup-pager-nav/
 echo basicPagination($items, 'container grid');?>
 
 </div><!-- /#content-body -->
+
+<aside id="sidebar" pw-append>
+
+<?php // Show Home page Children
+    echo pageChildren(pages(1),
+    [
+        'limit'=> 12,
+    //  'random' => true
+    ]
+);
+?>
+
+</aside>

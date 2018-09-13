@@ -34,7 +34,6 @@ mix.combine([
              "./dist/*.js",
              "./*.php",
              "./inc/*.php",
-             "./inc/photoswipe/*.php",
              "./render/*.php",
              "./fields/*.php"
          ]

@@ -31,7 +31,7 @@ page()->ts = [
 'fullSize' => __("full size"),
 
 // Gallery
-'gotoGallery' => __('Go to Gallery'),
+'moreGallery' => __('More Gallery'),
 'amazingGalleries' => __('See my amazing Galleries'),
 
 // Search Page ( search.php )

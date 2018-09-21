@@ -1,4 +1,6 @@
-<?php namespace ProcessWire;?>
+<?php namespace ProcessWire;
+
+?>
 
 <!-- Core CSS file -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css"> 

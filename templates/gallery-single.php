@@ -1,26 +1,27 @@
-<?php namespace ProcessWire;?>
+<?php namespace ProcessWire;
+
+?>
 
 <!-- HEADING -->
-<h1 id='content-head'><?=icon('image',
-[  'txt' => page()->get('headline|title'),
-   'width' => 50,
-   'height' => 50,
-   'stroke' => 1,
-   'color' => '#6a7780'
-]
+<h1 id='content-head'><?=icon(
+    'image',
+    [  'txt' => page()->get('headline|title'),
+    'width' => 50,
+    'height' => 50,
+    'stroke' => 1,
+    'color' => '#6a7780'
+    ]
 )?></h1>
 
 <div id='content-body' pw-prepend>
 
 <div class="my-gallery grid" itemscope itemtype="http://schema.org/ImageGallery">
 
-<?php if(page()->images):
-
-foreach (page()->images as $img):
-
-$img_size = $img->width('1200');
-$width = $img_size->width;
-$height = $img_size->height;?>
+<?php if (page()->images) :
+    foreach (page()->images as $img) :
+        $img_size = $img->width('1200');
+        $width = $img_size->width;
+        $height = $img_size->height;?>
 
   <figure class='col-4_sm-12' itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
@@ -30,8 +31,7 @@ $height = $img_size->height;?>
 
     </a>
 
-<?php if($img->description):?>
-
+        <?php if ($img->description) :?>
     <figcaption itemprop="<?=$img->description?>">
 
         <blockquote>
@@ -42,13 +42,12 @@ $height = $img_size->height;?>
 
     </figcaption>
 
-<?php endif; ?>
+        <?php endif; ?>
 
 </figure>
 
-<?php endforeach; 
-
-        endif;?>   
+    <?php endforeach;
+endif;?>   
 
 </div><!-- /.my-gallery -->
 
@@ -59,14 +58,15 @@ $height = $img_size->height;?>
 <aside id="sidebar" pw-append>
 
 <?php // Show Home page Children
-    echo pageChildren(page()->parent,
-    [
+    echo pageChildren(
+        page()->parent,
+        [
         'limit'=> 12,
         'random' => true,
         'txt' => page()->ts['moreGallery']
-    ]
-);
-?>
+        ]
+    );
+    ?>
 
 </aside>
 

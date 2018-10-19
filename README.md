@@ -7,8 +7,8 @@
 
 ### How To Install
 1. Download the [zip file](https://github.com/rafaoski/site-milligram-photoswipe/archive/master.zip) at Github or clone directly the repo: ```git clone git@github.com:rafaoski/site-milligram-photoswipe.git```
-2. Extract the folder **site-milligram** into a fresh ProcessWire installation root folder.
-3. During the installation of ProcessWire, choose the profile **"Milligram Blog"**.
+2. Extract the folder **site-milligram-photoswipe** into a fresh ProcessWire installation root folder.
+3. During the installation of ProcessWire, choose the profile **"Milligram - Photoswipe Gallery"**.
 
 #### If you want to use [Laravel Mix](https://github.com/JeffreyWay/laravel-mix) you must first ensure that [Node.js](https://nodejs.org/en/download/) and [NPM](https://www.npmjs.com/get-npm) are installed on your machine.
 Basic example to Debian and Ubuntu based Linux distributions:  
